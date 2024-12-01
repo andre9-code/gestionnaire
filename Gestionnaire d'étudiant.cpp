@@ -6,12 +6,12 @@ class Etudiant {
 private:
     std::string nom;
     std::string prenom;
-    int numeroEtudiant;
+    char numeroEtudiant;
     std::vector<float> notes; 
 
 public:
 
-    Etudiant(std::string n, std::string p, int num) : nom(n), prenom(p), numeroEtudiant(num) {}
+    Etudiant(std::string n, std::string p, char num) : nom(n), prenom(p), numeroEtudiant(num) {}
 
 
     void ajouterNote(float note) { notes.push_back(note); }
